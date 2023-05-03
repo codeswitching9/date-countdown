@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="src/main.css">
     </head>
     <body>
-        <div class="until">
+        <div class="until" id="myCountdown">
             <div class="until__component">
                 <div class="until__numeric until__numeric--days">00</div>
                 <div class="until__unit">Days</div>
@@ -27,6 +27,8 @@
             <!-- would like to make event name based on input from user (like a pop up calendar) -->
             <div class="until__event">Until December 31, 2023</div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/plugin/duration.min.js"></script>
         <script src="src/main.js"></script>
     </body>
 </html>
