@@ -12,6 +12,8 @@ function activateCountdown(element, dateString) {
         // creating a duration object of the amount of time
         const duration = dayjs.duration(targetDate.diff(now));
 
+        if (duration.asMilliseconds() <= 0) return;
+
         // padStart method ensures two digit number like "01" instead of "1"; first parameter is number of max length then second is the "filler number"
         element.querySelector(".until__numeric--seconds").textContent = duration.seconds().toString().padStart(2, "0");
         element.querySelector(".until__numeric--minutes").textContent = duration.minutes().toString().padStart(2, "0");
