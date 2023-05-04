@@ -7,6 +7,14 @@
         <link rel="stylesheet" href="src/main.css">
     </head>
     <body>
+        <!-- calendar picker added -->
+        <form>
+            <input class="form-control" type="date" id="textDate" placeholder="Select Date" />
+            <br>
+            <input type="button" value="Calculate" onclick="startTimer()"
+        </form>
+        
+        <!-- countdown widget -->
         <div class="until" id="myCountdown">
             <div class="until__component">
                 <div class="until__numeric until__numeric--days">00</div>
@@ -27,6 +35,8 @@
             <!-- would like to make event name based on input from user (like a pop up calendar) -->
             <div class="until__event">Until December 31, 2023</div>
         </div>
+        
+        <!-- script for actual countdown -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/plugin/duration.min.js"></script>
         <script src="src/main.js"></script>
