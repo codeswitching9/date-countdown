@@ -1,3 +1,3 @@
 # Date countdown
 
-This is a basic web application with a countdown to a specified date by the user.
+This version of the countdown timer has a specified date in the code. There is no option for a date picker.
