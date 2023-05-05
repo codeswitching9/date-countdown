@@ -3,7 +3,7 @@ dayjs.extend(dayjs_plugin_duration);
 function activateCountdown(element, dateString) {
     const targetDate = dayjs(dateString);
 
-    element.querySelector(".until__event").textContent = `Until ${ targetDate.format("MMMM D YYYY")}`;
+    element.querySelector(".until__event").textContent = `Until ${targetDate.format("MMMM D YYYY")}`;
 
     // function calculates difference between now and target date
     setInterval(() => {
